@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary-color: #07510C;
+}
+
+body {
+  background-color: #E5E2C7;
+
+  font-family: 'Roboto', sans-serif;
+
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+
+header {
+  display: flex;
+  gap: 40rem;
+}
+
+#logo {
+  width: 25rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+
+  font-size: 1.7rem;
+}
+
+.menu-sup a {
+  text-decoration: none;
+
+  color: black;
+}
