@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -14,8 +14,6 @@ body {
   background-color: #E5E2C7;
 
   font-family: 'Roboto', sans-serif;
-
-  margin-left: 10rem;
   margin-top: 5rem;
 }
 
@@ -40,4 +38,59 @@ ul {
   text-decoration: none;
 
   color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 'A B';
+  width: min(112rem, 100%);
+  margin-top: 3rem;
+  grid-gap: 2rem;
+}
+
+.col-1 {
+  grid-area: A;
+  max-width: 100%;
+}
+
+.col-1 p {
+  font-size: 5rem;
+  color: var(--ff-primary-color);
+  font-weight: 700;
+}
+
+.col-1 p span {
+  font-size: 1.5rem;
+  color: black;
+  
+}
+
+.col-2 {
+  grid-area: B;
+  max-width: 100%;
+ 
+
+}
+
+.col-1 img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.col-1 button {
+  margin-block: 2rem;
+  cursor: pointer;
+}
+
+.col-2 img {
+  max-width: 100%;
+  border-radius: 1rem;
+
+}
+
+.col-2 p {
+  font-size: 2rem;
+  color: var(--ff-primary-color);
+  font-weight: 400;
 }
