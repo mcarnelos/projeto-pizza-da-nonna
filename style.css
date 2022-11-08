@@ -14,7 +14,7 @@ body {
   background-color: #E5E2C7;
 
   font-family: 'Roboto', sans-serif;
-  margin-top: 5rem;
+  margin-block: 5rem;
 }
 
 header {
@@ -26,71 +26,64 @@ header {
   width: 25rem;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  gap: 5rem;
-
-  font-size: 1.7rem;
-}
-
-.menu-sup a {
-  text-decoration: none;
-
-  color: black;
-}
-
 .container {
-  display: grid;
-  grid-template-areas: 'A B';
-  width: min(112rem, 100%);
+  display: flex;
+  flex-direction: column;
   margin-top: 3rem;
-  grid-gap: 2rem;
+  gap: 2rem;
+
+  max-width: 40rem;
 }
 
-.col-1 {
-  grid-area: A;
-  max-width: 100%;
+.column {
+  margin: auto;
 }
 
-.col-1 p {
+.column h1 {
   font-size: 5rem;
   color: var(--ff-primary-color);
   font-weight: 700;
 }
 
-.col-1 p span {
+.column h2 {
+  margin-top: 1rem;
+}
+
+.column p {
   font-size: 1.5rem;
   color: black;
-  
 }
 
-.col-2 {
-  grid-area: B;
-  max-width: 100%;
- 
-
-}
-
-.col-1 img {
-  max-width: 100%;
+.column img {
+  width: 100%;
   border-radius: 1rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
-.col-1 button {
+.column button {
   margin-block: 2rem;
   cursor: pointer;
 }
 
-.col-2 img {
-  max-width: 100%;
-  border-radius: 1rem;
-
+button {
+  color: white;
+  background-color: var(--ff-primary-color);
+  font-weight: 700;
+  padding: 1rem;
+  border: none;
+  border-radius: .5rem;
 }
 
-.col-2 p {
-  font-size: 2rem;
+button:hover {
   color: var(--ff-primary-color);
-  font-weight: 400;
+  background-color: beige;
+}
+
+@media (min-width: 70rem) {
+  .container {
+    max-width: 80rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
